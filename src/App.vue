@@ -37,6 +37,7 @@ body {
   font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
   background-color: #0E0E0E;
   margin: 45px 0;
+  min-height: calc(100vh - 90px);
 }
 
 img {

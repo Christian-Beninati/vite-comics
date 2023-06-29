@@ -16,7 +16,7 @@ export default {
     </main>
 </template>
 
-<style>
+<style scoped>
 section {
     height: 110px;
     display: flex;
