@@ -35,11 +35,21 @@ export default {
 /* General */
 body {
   font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
+  background-color: #0E0E0E;
+  margin: 45px 0;
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Utilities */
