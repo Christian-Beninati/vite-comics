@@ -93,6 +93,8 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/vars' as *;
+@use '../assets/scss/mixins' as *;
+
 
 .footer-top {
     height: 540px;
@@ -122,7 +124,6 @@ export default {
     ::after {
         content: "";
         position: absolute;
-        /* top: 4%; */
         left: 55%;
         width: 650px;
         height: 650px;
@@ -164,9 +165,7 @@ nav {
 
 .container-foot-bot {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(space-between, center);
 }
 
 .sign-up a {
@@ -178,8 +177,8 @@ nav {
 }
 
 .follow-us {
-    display: flex;
-    align-items: center;
+    @include flexbox(null, center);
+
 
     a {
         color: $blue;

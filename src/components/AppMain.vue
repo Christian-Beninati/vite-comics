@@ -10,11 +10,12 @@
 
 <style lang="scss" scoped>
 @use '../assets/scss/vars' as *;
+@use '../assets/scss/mixins' as *;
+
 
 section {
     height: 110px;
-    display: flex;
-    align-items: center;
+    @include flexbox(null, center);
 
     h2 {
         color: $white;

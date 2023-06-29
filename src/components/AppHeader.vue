@@ -78,12 +78,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/vars' as *;
+@use '../assets/scss/mixins' as *;
+
 
 .header-container {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(space-between, center);
 }
 
 header {
