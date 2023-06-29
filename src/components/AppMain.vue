@@ -1,12 +1,4 @@
-<script>
-export default {
-    data() {
-        return {
-
-        }
-    }
-}
-</script>
+<script></script>
 
 <template>
     <main>
@@ -16,14 +8,16 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 section {
     height: 110px;
     display: flex;
     align-items: center;
-}
 
-section h2 {
-    color: white;
+    h2 {
+        color: $white;
+    }
 }
 </style>
