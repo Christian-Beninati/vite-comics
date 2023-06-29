@@ -24,38 +24,6 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* General */
-body {
-  font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
-  background-color: #0E0E0E;
-  margin: 45px 0;
-  min-height: calc(100vh - 90px);
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/* Utilities */
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
+<style lang="scss">
+@use './assets/scss/style.scss'
 </style>
