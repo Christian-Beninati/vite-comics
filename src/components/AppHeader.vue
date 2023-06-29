@@ -76,7 +76,9 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 .header-container {
     height: 100%;
     display: flex;
@@ -86,32 +88,32 @@ export default {
 
 header {
     height: 110px;
-    background-color: white;
+    background-color: $white;
 }
 
 img {
     width: 80px;
 }
 
-ul li a {
-    color: black;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
 ul {
     display: flex;
-}
 
-ul li {
-    padding: 0 10px;
-}
+    li {
+        padding: 0 10px;
 
-ul li a:hover,
-ul li a.active {
-    color: #2982F9;
-    border-bottom: 5px solid #2982F9;
-    padding-bottom: 40px;
+        a {
+            color: $black;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            &:hover,
+            &.active {
+                color: $blue;
+                border-bottom: 5px solid $blue;
+                padding-bottom: 40px;
+            }
+        }
+    }
 }
 </style>
