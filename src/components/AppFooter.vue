@@ -91,7 +91,9 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 .footer-top {
     height: 540px;
     position: relative;
@@ -104,57 +106,60 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
+
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        /* top: 4%; */
+        left: 55%;
+        width: 650px;
+        height: 650px;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-size: cover;
+        z-index: -1;
+    }
 }
 
-.container-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/img/footer-bg.jpg);
-    background-size: cover;
-    z-index: -1;
-}
 
-.container-footer::after {
-    content: "";
-    position: absolute;
-    /* top: 4%; */
-    left: 55%;
-    width: 650px;
-    height: 650px;
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-size: cover;
-    z-index: -1;
-}
 
 nav {
     display: flex;
+
+    .list {
+        padding-right: 50px;
+        z-index: 1;
+
+        h4 {
+            text-transform: uppercase;
+            color: $white;
+            padding: 10px 0;
+        }
+
+        a {
+            color: $grey;
+            font-weight: 300;
+            font-size: 12px;
+        }
+    }
 }
 
-.list {
-    padding-right: 50px;
-    z-index: 1;
-}
 
-h4 {
-    text-transform: uppercase;
-    color: white;
-    padding: 10px 0;
-}
-
-
-a {
-    color: #959595;
-    font-weight: 300;
-    font-size: 12px;
-}
 
 .footer-bottom {
     height: 110px;
-    background-color: #303030;
+    background-color: $darkGrey;
 }
 
 .container-foot-bot {
@@ -165,27 +170,27 @@ a {
 }
 
 .sign-up a {
-    color: white;
+    color: $white;
     font-size: 18px;
     font-weight: 500;
-    border: 2px solid #2982F9;
+    border: 2px solid $blue;
     padding: 10px;
 }
 
 .follow-us {
     display: flex;
     align-items: center;
-}
 
-.follow-us a {
-    color: #2982F9;
-    font-size: 20px;
-    font-weight: 700;
-    padding-right: 25px;
-}
+    a {
+        color: $blue;
+        font-size: 20px;
+        font-weight: 700;
+        padding-right: 25px;
+    }
 
-.follow-us img {
-    padding-right: 20px;
-    cursor: pointer;
+    img {
+        padding-right: 20px;
+        cursor: pointer;
+    }
 }
 </style>
