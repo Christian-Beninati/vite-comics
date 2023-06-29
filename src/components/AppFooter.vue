@@ -124,7 +124,7 @@ export default {
     ::after {
         content: "";
         position: absolute;
-        left: 55%;
+        left: 47%;
         width: 650px;
         height: 650px;
         background-image: url(../assets/img/dc-logo-bg.png);
