@@ -70,7 +70,23 @@ export default {
 
         <!-- footer boottom -->
         <div class="footer-bottom">
+            <div class="container container-foot-bot">
+                <div class="sign-up">
+                    <a href="#">SIGN-UP NOW!</a>
+                </div>
 
+                <div class="follow-us">
+                    <a href="#">FOLLOW US </a>
+                    <figure>
+                        <img src="../assets/img/footer-facebook.png" alt="facebook">
+                        <img src="../assets/img/footer-twitter.png" alt="twitter">
+                        <img src="../assets/img/footer-youtube.png" alt="youtube">
+                        <img src="../assets/img/footer-pinterest.png" alt="pinteret">
+                        <img src="../assets/img/footer-periscope.png" alt="periscope">
+                    </figure>
+                </div>
+
+            </div>
         </div>
     </footer>
 </template>
@@ -79,7 +95,7 @@ export default {
 .footer-top {
     height: 540px;
     position: relative;
-    padding: 40px 0;
+    padding-top: 110px;
 }
 
 .container-footer {
@@ -120,6 +136,7 @@ nav {
 
 .list {
     padding-right: 50px;
+    z-index: 1;
 }
 
 h4 {
@@ -138,5 +155,37 @@ a {
 .footer-bottom {
     height: 110px;
     background-color: #303030;
+}
+
+.container-foot-bot {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-up a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #2982F9;
+    padding: 10px;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+}
+
+.follow-us a {
+    color: #2982F9;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 25px;
+}
+
+.follow-us img {
+    padding-right: 20px;
+    cursor: pointer;
 }
 </style>
