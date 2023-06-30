@@ -3,8 +3,10 @@
 
 <template>
     <main>
-        <section class="jumbotron"></section>
-        <section class="container">
+        <section class="jumbotron">
+            <a href="#">CURRENT SERIES</a>
+        </section>
+        <section class="container comic-card">
             <h2> -- Content goes here -- </h2>
         </section>
     </main>
@@ -18,13 +20,14 @@ main {
     background-color: $black
 }
 
-section {
+.comic-card {
     height: 110px;
     @include flexbox(start, center);
 
     h2 {
         color: $white;
     }
+
 }
 
 .jumbotron {
@@ -33,5 +36,20 @@ section {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    position: relative;
+
+
+    a {
+        background-color: $blue;
+        position: absolute;
+        bottom: -8%;
+        left: 18%;
+        z-index: 1;
+        color: $white;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 15px 20px;
+        display: block;
+    }
 }
 </style>
