@@ -10,9 +10,7 @@
   /* General */
   body {
     font-family: $font;
-    background-color: $black;
-    margin: 45px 0;
-    min-height: calc(100vh - 90px);
+    min-height: 100vh;
   }
   
   img {

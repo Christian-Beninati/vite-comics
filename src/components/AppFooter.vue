@@ -95,9 +95,12 @@ export default {
 @use '../assets/scss/vars' as *;
 @use '../assets/scss/mixins' as *;
 
+footer {
+    height: calc(100vh - 330px);
+}
 
 .footer-top {
-    height: 540px;
+    height: 100%;
     position: relative;
     padding-top: 110px;
 }

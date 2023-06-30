@@ -12,6 +12,9 @@
 @use '../assets/scss/vars' as *;
 @use '../assets/scss/mixins' as *;
 
+main {
+    background-color: $black
+}
 
 section {
     height: 110px;
