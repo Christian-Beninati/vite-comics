@@ -102,7 +102,7 @@ ul {
         padding: 0 10px;
 
         a {
-            color: $black;
+            color: $lightBlack;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 14px;
