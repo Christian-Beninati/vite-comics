@@ -1,4 +1,10 @@
-<script></script>
+<script>
+export default {
+    props: {
+        cards: Array
+    }
+}
+</script>
 
 <template></template>
 
