@@ -180,7 +180,7 @@ nav {
 }
 
 .follow-us {
-    @include flexbox(null, center);
+    @include flexbox(start, center);
 
 
     a {

@@ -18,7 +18,7 @@ main {
 
 section {
     height: 110px;
-    @include flexbox(null, center);
+    @include flexbox(start, center);
 
     h2 {
         color: $white;
